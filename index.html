@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Glucose Tracker</title>
+
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <div id="navbar"></div>
+
+    <div class="container">
+
+        <div class="hero">
+
+            <h1>🩸 Glucose Tracker</h1>
+
+            <p>
+                سجّل قراءات السكر اليومية وتابع صحتك بسهولة.
+            </p>
+
+        </div>
+
+        <div class="cards">
+
+            <div class="card">
+
+                <h3>🩸 آخر قراءة</h3>
+
+                <h2 id="lastReading">--</h2>
+
+            </div>
+
+            <div class="card">
+
+                <h3>📊 المتوسط</h3>
+
+                <h2 id="averageReading">--</h2>
+
+            </div>
+
+            <div class="card">
+
+                <h3>📅 عدد القراءات</h3>
+
+                <h2 id="readingCount">--</h2>
+
+            </div>
+
+        </div>
+
+        <div id="statusCard" class="status-card">
+
+    <h2 id="statusTitle">جاري التحقق...</h2>
+
+    <p id="statusMessage"></p>
+
+</div>
+
+        <div class="form-card">
+
+            <h2>➕ إضافة قراءة جديدة</h2>
+
+            <label>نسبة السكر</label>
+
+            <input
+                type="number"
+                id="glucose"
+                placeholder="مثال: 120">
+
+            <label>جرعة الأنسولين (اختياري)</label>
+
+            <input
+                type="number"
+                id="insulin"
+                placeholder="مثال: 5">
+
+            <label>ملاحظات</label>
+
+            <textarea
+                id="note"
+                rows="5"
+                placeholder="قبل الإفطار..."></textarea>
+
+            <button id="saveBtn">
+
+                💾 حفظ القراءة
+
+            </button>
+
+        </div>
+
+    </div>
+
+    <script type="module" src="js/addReading.js"></script>
+    <script type="module" src="js/dashboard.js"></script>
+    <script src="js/navbar.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+
+    
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/navbar.css">
+    <title>الإحصائيات</title>
+</head>
+<body>
+    <div id="navbar"></div>
+
+    <div class="container">
+<h1>الإحصائيات</h1>
+
+<div>
+    <h3>متوسط السكر</h3>
+    <h2 id="average">0</h2>
+</div>
+
+<div>
+    <h3>أعلى قراءة</h3>
+    <h2 id="highest">0</h2>
+</div>
+
+<div>
+    <h3>أقل قراءة</h3>
+    <h2 id="lowest">0</h2>
+</div>
+
+<div>
+    <h3>عدد القراءات</h3>
+    <h2 id="count">0</h2>
+
+    <h3>🟢 طبيعي</h3>
+    <h2 id="normalCount">0</h2>
+
+    <h3>🟠 مرتفع</h3>
+    <h2 id="highCount">0</h2>
+
+    <h3>🔴 منخفض</h3>
+    <h2 id="lowCount">0</h2>
+</div>
+    </div>
+
+
+<canvas id="glucoseChart"></canvas>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script type="module" src="js/stats.js"></script>
+<script src="js/navbar.js"></script>
+
+</body>
+</html>
+
